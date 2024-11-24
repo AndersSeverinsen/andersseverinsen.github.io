@@ -1,63 +1,84 @@
 html {
     width: 100%;
-    color: white;
-    background-color: black;
-    font-family: Tahoma, sans-serif;
+    font-family: 'Manrope', sans-serif;
 }
 
-header {
+p {
+    color: black;
+}
+
+header, footer {
     display: flex;
     margin: 20px;
     align-items: center;
     justify-content: space-between;
 }
 
-header h1 {
+footer {
+    border-top: 1px solid black;
+}
+
+header h1, footer h1 {
     margin: 30px;
     font-size: 20px;
+    font-weight: 600;
 }
 
-.header {
-    display: flex;
-    align-items: center;
-}
-
-.header a {
-    display: flex;
+header a, footer a {
     align-items: center;
     text-decoration: none;
-    color: white;
+    color: black;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 .leftcolumn {
     float: left;
-    text-align: left;
 } 
- 
+
 .rightcolumn {
     float: right;
-    text-align: right;
 }
 
-.topnav {
+.centercolumn {
+    float: center;
+}
+
+.bottomnav {
+    width: 30%;
+}
+
+.topnav, .bottomnav {
     align-items: center;
-    overflow: hidden;
+    text-align: center;
     padding-top: 15px;
     height: 40px;
 }
 
-.topnav a {
-    font-size: 17px;
+.topnav a, .bottomnav a {
+    font-size: 18px;
     text-align: center;
-    color: white;
+    color: black;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-.topnav a:hover {
-    color: white;
+.topnav a:hover, .bottomnav a:hover {
+    color: black;
     text-decoration: underline;
-    text-underline-offset: 5px;
+    text-underline-offset: 2px;
+}
+
+.bottomnav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.bottomnav li {
+    margin-bottom: 10px;
 }
 
 #backgroundimage {
@@ -73,9 +94,4 @@ header h1 {
     width: 50px; 
     height: 50px;
     padding-left: 10px;
-}
-
-hr {
-    color: white;
-    width: 100px;
 }
