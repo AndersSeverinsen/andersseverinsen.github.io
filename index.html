@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>BruunSeverinsen</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
         <link rel="mybrain" type="image/x-icon" href="favicon.ico">
         <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
     </head>
@@ -19,25 +19,34 @@
         </div>
     </header>
     <body>
+        <div class="profile">
+            <div class="profilepic">
+                <img src="images/kajak.jpg" alt="kajak.jpg">
+            </div>
+            <div class="profiletext">
+                <h2>Anders Bruun Severinsen</h2>
+                <p>Computer Science Student @ Aarhus University</p>
+            </div>
+        </div>
         <div class="thumbdiv">
             <ul class="thumbnav">
                 <li>
-                    <a href="#personal" class="active">
+                    <a href="#personal" class="active" onClick="show('personal')" id="personalnav">
                         <h3>Personal</h3>
                     </a>
                 </li>
                 <li>
-                    <a href="#school">
+                    <a href="#school" onClick="show('school')" id="schoolnav">
                         <h3>School</h3>
                     </a>
                 </li>
                 <li>
-                    <a href="#pro">
+                    <a href="#professional" onClick="show('professional')" id="professionalnav">
                         <h3>Professional</h3>
                     </a>
                 </li>
             </ul>
-            <ul class="thumblist">
+            <ul class="thumblist" id="personal">
                 <li class="thumb notactive">
                     <a> <!-- href="./fridg3" target="_blank"  -->
                         <div class="leftcolumn">
@@ -52,58 +61,33 @@
                     </a>
                 </li>
             </ul>
+            <ul class="thumblist" id="school" display="none"></ul>
+            <ul class="thumblist" id="professional" display="none"></ul>
         </div>
     </body>
     <footer>
         <div class="bottomnav leftcolumn">
             <ul>
-                <li>
-                    <h5>Follow me</h5>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/anders-bruun-severinsen/" target="_blank">
-                        LinkedIn
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/AndersSeverinsen/" target="_blank">
-                        GitHub
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/profile.php?id=100004258695785" target="_blank">
-                        Facebook
-                    </a>
-                </li>
+                <li><h5>Follow me</h5></li>
+                <li><a href="https://www.linkedin.com/in/anders-bruun-severinsen/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/AndersSeverinsen/" target="_blank">GitHub</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100004258695785" target="_blank">Facebook</a></li>
             </ul>
         </div>
         <div class="bottomnav centercolumn">
             <ul>
-                <li>
-                    <h5>Pages</h5>
-                </li>
-                <li>
-                    <a href="https://bruunseverinsen.dk/">Home</a>
-                </li>
-                <li>
-                    <a href="https://bruunseverinsen.dk/wiki" target="_blank">Wiki</a>
-                </li>
-                <li>
-                    <a href="#">Blog</a>
-                </li>
+                <li><h5>Pages</h5></li>
+                <li><a href="https://bruunseverinsen.dk/">Home</a></li>
+                <li><a href="https://bruunseverinsen.dk/wiki" target="_blank">Wiki</a></li>
+                <li><a href="#">Blog</a></li>
             </ul>
         </div>
         <div class="bottomnav rightcolumn">
             <ul>
-                <li>
-                    <h5>Contact info</h5>
-                </li>
-                <li>
-                    <a href="mailto:anders@bruunseverinsen.dk">
-                        anders@bruunseverinsen.dk
-                    </a>
-                </li>
+                <li><h5>Contact info</h5></li>
+                <li><a href="mailto:anders@bruunseverinsen.dk">anders@bruunseverinsen.dk</a></li>
             </ul>
         </div>
     </footer>
 </html>
+<script src="styles/script.js"></script>

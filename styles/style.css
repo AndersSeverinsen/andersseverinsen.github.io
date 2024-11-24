@@ -72,7 +72,7 @@ header a:hover, footer a:hover {
     text-underline-offset: 2px;
 }
 
-.bottomnav ul {
+.bottomnav ul, .thumbdiv ul {
     padding: 0;
     list-style-type: none;
 }
@@ -98,18 +98,18 @@ header a:hover, footer a:hover {
 
 /* Thumbnail listing */
 .thumbdiv {
-    flex-wrap: wrap;
-    display: flex;
     justify-content: center;
-    width: 100%;
+    align-items: center;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .thumb {
-    margin: 10px;
+    margin: 20px;
     width: 800px;
     height: 200px;
     overflow: hidden;
-    padding: 20px;
 }
 
 .thumblist li:not(:last-child) {
@@ -145,13 +145,12 @@ header a:hover, footer a:hover {
     text-decoration: none;
 }
 
-
 /* Thumbnail navigation */
 .thumbnav {
+    margin: 20px;
     width: 800px;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    padding: 20px;
     overflow: hidden;
     border-bottom: 1px solid #c8c8c8;
 }
@@ -163,6 +162,7 @@ header a:hover, footer a:hover {
 .thumbnav li a {
     display: block;
     color: #707070;
+    border-bottom: 0px solid black;
     text-align: center;
     padding: 0px 10px;
     text-decoration: none;
@@ -175,4 +175,25 @@ header a:hover, footer a:hover {
 .thumbnav li a.active {
     color: black;
     border-bottom: 1px solid black;
+}
+
+/* Profile information */
+.profile {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.profile img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.profiletext {
+    text-align: center;
+    margin: 20px;
 }
