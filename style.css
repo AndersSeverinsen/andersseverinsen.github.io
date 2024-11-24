@@ -95,3 +95,84 @@ header a:hover, footer a:hover {
     height: 50px;
     padding-left: 10px;
 }
+
+/* Thumbnail listing */
+.thumbdiv {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.thumb {
+    margin: 10px;
+    width: 800px;
+    height: 200px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.thumblist li:not(:last-child) {
+    margin-right: 5px;
+    padding-right: 5px;
+    border-bottom: 1px solid #c8c8c8;
+  }
+
+.thumb .leftcolumn {
+    width: 60%;
+}
+
+.thumb:hover h3 {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.thumb img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.thumb h5 {
+    color: #707070;
+}
+
+.notactive {
+    color: black;
+}
+
+.notactive:hover h3 {
+    text-decoration: none;
+}
+
+
+/* Thumbnail navigation */
+.thumbnav {
+    width: 800px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.thumbnav li {
+    float: left;
+}
+
+.thumbnav li a {
+    display: block;
+    color: #707070;
+    text-align: center;
+    padding: 0px 10px;
+    text-decoration: none;
+}
+
+.thumbnav li a:hover {
+    color: black;
+}
+
+.thumbnav li a.active {
+    color: black;
+    border-bottom: 1px solid black;
+}
