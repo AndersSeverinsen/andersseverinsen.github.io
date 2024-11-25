@@ -130,6 +130,7 @@ header a:hover, footer a:hover {
 .thumb img {
     width: 200px;
     height: 200px;
+    border-radius: 5%;
     object-fit: cover;
 }
 
@@ -186,11 +187,11 @@ header a:hover, footer a:hover {
 }
 
 .profile img {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid black;
+    border: 2.5px solid black;
 }
 
 .profiletext {
