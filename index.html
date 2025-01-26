@@ -4,6 +4,7 @@
         <link rel="stylesheet" type="text/css" href="styles/style.css">
         <link rel="mybrain" type="image/x-icon" href="favicon.ico">
         <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <header id="primary">
         <div class="header leftcolumn">
@@ -14,7 +15,7 @@
         </div>
         <div class="topnav rightcolumn">
             <a href="https://bruunseverinsen.dk/">Home</a>
-            <a href="https://bruunseverinsen.dk/wiki" target="_blank">Wiki</a>
+            <a href="https://wiki.bruunseverinsen.dk/" target="_blank">Wiki</a>
             <a href="#">Blog</a>
         </div>
     </header>
@@ -31,63 +32,91 @@
         <div class="thumbdiv">
             <ul class="thumbnav">
                 <li>
-                    <a href="#personal" class="active" onClick="show('personal')" id="personalnav">
+                    <a href="#personalnav" class="active" onClick="show('personal')" id="personalnav">
                         <h3>Personal</h3>
                     </a>
                 </li>
                 <li>
-                    <a href="#school" onClick="show('school')" id="schoolnav">
+                    <a href="#schoolnav" onClick="show('school')" id="schoolnav">
                         <h3>School</h3>
                     </a>
                 </li>
                 <li>
-                    <a href="#professional" onClick="show('professional')" id="professionalnav">
+                    <a href="#professionalnav" onClick="show('professional')" id="professionalnav">
                         <h3>Professional</h3>
                     </a>
                 </li>
             </ul>
             <ul class="thumblist" id="personal">
                 <li class="thumb notactive">
-                    <a> <!-- href="./fridg3" target="_blank"  -->
-                        <div class="leftcolumn">
-                            <h3>Smart shopping list - fridg3</h3>
-                            <p>A shopping list that also keeps track of your current stock, 
-                                and can present precipice for what you have available.</p> 
-                            <h5>March 22, 2022</h5>   
-                        </div>
-                        <div class="rightcolumn">
-                            <img src="images/fridg3_display.png">
-                        </div>
-                    </a>
+                    <div class="leftcolumn">
+                        <a class="thumbtitle"> <!-- href="./fridg3" target="_blank"  --><h3>Smart shopping list - fridg3</h3></a>
+                        <p>A shopping list that also keeps track of your current stock, 
+                            and can present precipice for what you have available.</p> 
+                        <h5>March 2022</h5>
+                    </div>
+                    <div class="rightcolumn">
+                        <img src="images/fridg3_display.png">
+                    </div>
+                </li>
+                <li class="thumb">
+                    <div class="leftcolumn">
+                        <a class="thumbtitle" href="https://www.instructables.com/RPi-IoT-Smart-Light-Using-Firebase/" target="_blank"><h3>RPi IoT Smart Light Using Firebase</h3></a>
+                        <p>Demonstrated with a 3D printed case, a Pi Zero W, 
+                            a Powerboost 1000C, a LiPo battery and a Blinkt!</p> 
+                        <h5>January 2018</h5>
+                    </div>
+                    <div class="rightcolumn">
+                        <img src="images/appcontrol.jpg">
+                    </div>
+                </li>
+                <li class="thumb">
+                    <div class="leftcolumn">
+                        <a class="thumbtitle" href="https://www.instructables.com/RPi-Pocket-Sized-Retro-Looking-TV/" target="_blank"><h3>Raspberry Pi Retro-Looking TV</h3></a>
+                        <p>A retro-looking TV, with a Raspberry Pi, a Touchscreen and 
+                            some 3D printed parts.</p> 
+                        <a href="https://www.instructables.com/contest/raspberrypi2017/" class="pricewinner" target="_blank"><i class="fa fa-trophy" aria-hidden="true"></i> Second Prize in Instructables 2017 Raspberry Pi Contest</a>
+                        <h5>December 2017</h5>
+                    </div>
+                    <div class="rightcolumn">
+                        <img src="images/retrotv.jpg">
+                    </div>
                 </li>
             </ul>
             <ul class="thumblist" id="school" style="display:none;">
                 <li class="thumb notactive">
-                    <a> <!-- href="./fridg3" target="_blank"  -->
-                        <div class="leftcolumn">
-                            <h3>Minimalist Smart Planter</h3>
-                            <p>The smart planter fits most herbs bought in the supermarket, 
-                                and will help keep it fresh for longer and help water the plants correctly.</p> 
-                            <h5>April 27, 2020</h5>   
-                        </div>
-                        <div class="rightcolumn">
-                            <img src="images/planter_display.jpeg">
-                        </div>
-                    </a>
+                    <div class="leftcolumn">
+                        <a class="thumbtitle"> <!-- href="./opensesame" target="_blank"  --><h3>Smart Lockers</h3></a>
+                        <p>Allows you to register and open lockers with your student card.</p>
+                        <p class="pricewinner"><i class="fa fa-trophy" aria-hidden="true"></i> AUHack Best Hack 2024</p>
+                        <h5>October 2024</h5>
+                    </div>
+                    <div class="rightcolumn">
+                        <img src="images/opensesame.jpg">
+                    </div>
+                </li>
+                <li class="thumb notactive">
+                    <div class="leftcolumn">
+                        <a class="thumbtitle"> <!-- href="./planter" target="_blank"  --><h3>Minimalist Smart Planter</h3></a>
+                        <p>The smart planter fits most herbs bought in the supermarket, 
+                            and will help keep it fresh for longer and help water the plants correctly.</p> 
+                        <h5>April 2020</h5>
+                    </div>
+                    <div class="rightcolumn">
+                        <img src="images/planter_display.jpeg">
+                    </div>
                 </li>
             </ul>
             <ul class="thumblist" id="professional" style="display:none;">
                 <li class="thumb notactive">
-                    <a> <!-- href="./fridg3" target="_blank"  -->
-                        <div class="leftcolumn">
-                            <h3>Coming soon</h3>
-                            <p>...</p> 
-                            <h5>January 1, 1999</h5>   
-                        </div>
-                        <div class="rightcolumn">
-                            <img src="images/mybrain.png">
-                        </div>
-                    </a>
+                    <div class="leftcolumn">
+                        <a class="thumbtitle"> <!-- href="./planter" target="_blank"  --><h3>Coming soon</h3></a>
+                        <p>...</p>
+                        <h5>...</h5>
+                    </div>
+                    <div class="rightcolumn">
+                        <img src="images/mybrain.png">
+                    </div>
                 </li>
             </ul>
         </div>
@@ -105,7 +134,7 @@
             <ul>
                 <li><h5>Pages</h5></li>
                 <li><a href="https://bruunseverinsen.dk/">Home</a></li>
-                <li><a href="https://bruunseverinsen.dk/wiki" target="_blank">Wiki</a></li>
+                <li><a href="https://wiki.bruunseverinsen.dk/" target="_blank">Wiki</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
         </div>
