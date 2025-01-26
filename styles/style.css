@@ -83,6 +83,10 @@ header a:hover, footer a:hover {
     list-style-type: none;
 }
 
+.bottomnav ul {
+    padding-bottom: 50px;
+}
+
 .bottomnav li {
     margin-bottom: 10px;
 }
@@ -148,14 +152,6 @@ header a:hover, footer a:hover {
     color: #707070;
 }
 
-.notactive {
-    color: black;
-}
-
-.notactive:hover h3 {
-    text-decoration: none;
-}
-
 /* Thumbnail navigation */
 .thumbnav {
     margin: 20px;
@@ -217,7 +213,6 @@ header a:hover, footer a:hover {
     color: #f3f3f3;
     padding: 5px;
     border-radius: 5px;
-    width: 200px;
 }
 
 .pricewinner:hover {

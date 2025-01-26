@@ -6,6 +6,7 @@
         <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
+    <!-- === HEADER === -->
     <header id="primary">
         <div class="header leftcolumn">
             <a href="#">
@@ -16,10 +17,12 @@
         <div class="topnav rightcolumn">
             <a href="https://bruunseverinsen.dk/">Home</a>
             <a href="https://wiki.bruunseverinsen.dk/" target="_blank">Wiki</a>
-            <a href="#">Blog</a>
+            <a href="https://blog.bruunseverinsen.dk/">Blog</a>
         </div>
     </header>
+    <!-- === BODY === -->
     <body>
+        <!-- === PROFILE === -->
         <div class="profile">
             <div class="profilepic">
                 <img src="images/kajak.jpg" alt="kajak.jpg">
@@ -30,6 +33,7 @@
             </div>
         </div>
         <div class="thumbdiv">
+             <!-- === NAVIGATION BAR === -->
             <ul class="thumbnav">
                 <li>
                     <a href="#personalnav" class="active" onClick="show('personal')" id="personalnav">
@@ -47,35 +51,55 @@
                     </a>
                 </li>
             </ul>
+            <!-- === PERSONAL PROJECTS === -->
             <ul class="thumblist" id="personal">
-                <li class="thumb notactive">
+                <!-- === Smart shopping list - fridg3 === -->
+                <li class="thumb">
                     <div class="leftcolumn">
-                        <a class="thumbtitle"> <!-- href="./fridg3" target="_blank"  --><h3>Smart shopping list - fridg3</h3></a>
-                        <p>A shopping list that also keeps track of your current stock, 
-                            and can present precipice for what you have available.</p> 
+                        <a class="thumbtitle"> <!-- href="./fridg3" target="_blank">  -->
+                            <h3>Smart shopping list - fridg3</h3>
+                        </a>
+                        <p>
+                            A shopping list that also keeps track of your current stock, 
+                            and can present precipice for what you have available.
+                        </p> 
                         <h5>March 2022</h5>
                     </div>
                     <div class="rightcolumn">
                         <img src="images/fridg3_display.png">
                     </div>
                 </li>
+                <!-- === RPi IoT Smart Light Using Firebase === -->
                 <li class="thumb">
                     <div class="leftcolumn">
-                        <a class="thumbtitle" href="https://www.instructables.com/RPi-IoT-Smart-Light-Using-Firebase/" target="_blank"><h3>RPi IoT Smart Light Using Firebase</h3></a>
-                        <p>Demonstrated with a 3D printed case, a Pi Zero W, 
-                            a Powerboost 1000C, a LiPo battery and a Blinkt!</p> 
+                        <a class="thumbtitle" href="https://www.instructables.com/RPi-IoT-Smart-Light-Using-Firebase/" target="_blank">
+                            <h3>
+                                RPi IoT Smart Light Using Firebase <i class="fa fa-external-link-square" aria-hidden="true"></i>
+                            </h3>
+                        </a>
+                        <p>
+                            Demonstrated with a 3D printed case, a Pi Zero W, 
+                            a Powerboost 1000C, a LiPo battery and a Blinkt!
+                        </p> 
                         <h5>January 2018</h5>
                     </div>
                     <div class="rightcolumn">
                         <img src="images/appcontrol.jpg">
                     </div>
                 </li>
+                <!-- === Raspberry Pi Retro-Looking TV === -->
                 <li class="thumb">
                     <div class="leftcolumn">
-                        <a class="thumbtitle" href="https://www.instructables.com/RPi-Pocket-Sized-Retro-Looking-TV/" target="_blank"><h3>Raspberry Pi Retro-Looking TV</h3></a>
-                        <p>A retro-looking TV, with a Raspberry Pi, a Touchscreen and 
-                            some 3D printed parts.</p> 
-                        <a href="https://www.instructables.com/contest/raspberrypi2017/" class="pricewinner" target="_blank"><i class="fa fa-trophy" aria-hidden="true"></i> Second Prize in Instructables 2017 Raspberry Pi Contest</a>
+                        <a class="thumbtitle" href="https://www.instructables.com/RPi-Pocket-Sized-Retro-Looking-TV/" target="_blank">
+                            <h3>Raspberry Pi Retro-Looking TV <i class="fa fa-external-link-square" aria-hidden="true"></i></h3>
+                        </a>
+                        <p>
+                            A retro-looking TV, with a Raspberry Pi, a Touchscreen and 
+                            some 3D printed parts.
+                        </p>
+                        <a href="https://www.instructables.com/contest/raspberrypi2017/" class="pricewinner" target="_blank">
+                            <i class="fa fa-trophy" aria-hidden="true"></i> Second Prize in Instructables 2017 Raspberry Pi Contest
+                        </a>
                         <h5>December 2017</h5>
                     </div>
                     <div class="rightcolumn">
@@ -83,23 +107,39 @@
                     </div>
                 </li>
             </ul>
+            <!-- === SCHOOL PROJECTS === -->
             <ul class="thumblist" id="school" style="display:none;">
-                <li class="thumb notactive">
+                <!-- === Smart Lockers === -->
+                <li class="thumb">
                     <div class="leftcolumn">
-                        <a class="thumbtitle"> <!-- href="./opensesame" target="_blank"  --><h3>Smart Lockers</h3></a>
-                        <p>Allows you to register and open lockers with your student card.</p>
-                        <p class="pricewinner"><i class="fa fa-trophy" aria-hidden="true"></i> AUHack Best Hack 2024</p>
+                        <a class="thumbtitle">
+                            <h3>Smart Lockers</h3>
+                        </a>
+                        <p>
+                            Allows you to register and open lockers with your student card.
+                        </p>
+                        <a href="https://auhack.org/" class="pricewinner">
+                            <i class="fa fa-trophy" aria-hidden="true"></i> AUHack 2024 Best Hack
+                        </a>
                         <h5>October 2024</h5>
                     </div>
                     <div class="rightcolumn">
                         <img src="images/opensesame.jpg">
                     </div>
                 </li>
-                <li class="thumb notactive">
+                <!-- === Minimalist Smart Planter === -->
+                <li class="thumb">
                     <div class="leftcolumn">
-                        <a class="thumbtitle"> <!-- href="./planter" target="_blank"  --><h3>Minimalist Smart Planter</h3></a>
-                        <p>The smart planter fits most herbs bought in the supermarket, 
-                            and will help keep it fresh for longer and help water the plants correctly.</p> 
+                        <a class="thumbtitle"href="https://www.instructables.com/Minimalist-Smart-Planter/" target="_blank">
+                            <h3>Minimalist Smart Planter <i class="fa fa-external-link-square" aria-hidden="true"></i></h3>
+                        </a>
+                        <p>
+                            The smart planter fits most herbs bought in the supermarket, 
+                            and will help keep it fresh for longer and help water the plants correctly.
+                        </p>
+                        <a href="https://www.instructables.com/contest/indoorplants/" class="pricewinner" target="_blank">
+                            <i class="fa fa-trophy" aria-hidden="true"></i> Second Prize in Instructables Indoor Plants Challenge
+                        </a>
                         <h5>April 2020</h5>
                     </div>
                     <div class="rightcolumn">
@@ -107,20 +147,18 @@
                     </div>
                 </li>
             </ul>
+            <!-- === PROFESSIONAL PROJECTS === -->
             <ul class="thumblist" id="professional" style="display:none;">
-                <li class="thumb notactive">
+                <!-- === Nothing to show here yet. === -->
+                <li class="thumb">
                     <div class="leftcolumn">
-                        <a class="thumbtitle"> <!-- href="./planter" target="_blank"  --><h3>Coming soon</h3></a>
-                        <p>...</p>
-                        <h5>...</h5>
-                    </div>
-                    <div class="rightcolumn">
-                        <img src="images/mybrain.png">
+                        Nothing to show here yet.
                     </div>
                 </li>
             </ul>
         </div>
     </body>
+    <!-- === FOOTER === -->
     <footer>
         <div class="bottomnav leftcolumn">
             <ul>
@@ -135,7 +173,7 @@
                 <li><h5>Pages</h5></li>
                 <li><a href="https://bruunseverinsen.dk/">Home</a></li>
                 <li><a href="https://wiki.bruunseverinsen.dk/" target="_blank">Wiki</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="https://blog.bruunseverinsen.dk/">Blog</a></li>
             </ul>
         </div>
         <div class="bottomnav rightcolumn">
